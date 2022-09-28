@@ -1,7 +1,4 @@
-const rect = {
-  parimeter: (x, y) => 2 * (x + y),
-  area: (x, y) => x * y,
-};
+const rect = require("./rectangle");
 function solveRect(l, w) {
   console.log(`Solving for rectangle with dimension:${l},${w}`);
   if (l <= 0 || w <= 0) {
