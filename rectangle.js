@@ -6,8 +6,9 @@ module.exports = (x, y, callback) => {
       )
     );
   } else {
-    setTimeout(() =>
-      callback(null, { parimeter: () => 2 * (x + y), area: () => x * y })
+    setTimeout(
+      () => callback(null, { parimeter: () => 2 * (x + y), area: () => x * y }),
+      2000
     );
   }
 };
